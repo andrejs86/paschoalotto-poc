@@ -4,7 +4,12 @@
     "common": {
       "log_level": "info",
       "audit_log_ttl": 1209600,
-      "teams": ["Blue Team", "Red Team", "Gold Team", "VIP Team"],
+      "teams": [
+        "Blue Team",
+        "Red Team",
+        "Gold Team",
+        "VIP Team"
+      ],
       "departments": [
         "General Management",
         "Marketing",
@@ -72,11 +77,15 @@
       },
       "enhanced_crm_container": {
         "enabled": true,
-        "url": "{{serverless.url}}/features/enhanced-crm-container/index.html?line1={{task.from}}&line2={{task.direction}}",
+        "url": "https://andrejs86.github.io/paschoalotto-poc-web/?task=abc",
         "should_display_url_when_no_tasks": true,
-        "display_url_when_no_tasks": "{{serverless.url}}/features/enhanced-crm-container/index.html",
+        "display_url_when_no_tasks": "https://andrejs86.github.io/paschoalotto-poc-web/",
         "enable_url_tab": true,
-        "url_tab_title": "Web Page"
+        "url_tab_title": "Internal"
+      },
+      "switch_to_whatsapp_call": {
+        "enabled": true,
+        "contentTemplateSid": ""
       },
       "internal_call": {
         "enabled": true,
@@ -235,7 +244,10 @@
         "per_queue": {
           "exampleQueueName": {
             "require_disposition": true,
-            "dispositions": ["Promotional Sale", "Renewal"],
+            "dispositions": [
+              "Promotional Sale",
+              "Renewal"
+            ],
             "text_attributes": [],
             "select_attributes": []
           }
