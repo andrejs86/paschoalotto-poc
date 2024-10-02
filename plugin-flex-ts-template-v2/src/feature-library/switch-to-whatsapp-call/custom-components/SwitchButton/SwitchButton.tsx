@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Actions, ITask, StateHelper, Button } from '@twilio/flex-ui';
-import { CallTransferIcon } from "@twilio-paste/icons/esm/CallTransferIcon";
 import { ConversationsHelper } from '../../../../utils/helpers';
 
 interface TransferButtonProps {
@@ -38,7 +37,7 @@ const SwitchButton = (props: TransferButtonProps) => {
         variant="secondary"
         title="Whatsapp Call"
         style={{marginRight: '10px'}}
-      ><CallTransferIcon decorative={false} title="Voz via Whatsapp" />&nbsp;WA Voz</Button>
+      >WA Voz</Button>
   );
 };
 

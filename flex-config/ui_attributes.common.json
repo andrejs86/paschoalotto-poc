@@ -85,7 +85,10 @@
       },
       "switch_to_whatsapp_call": {
         "enabled": true,
-        "contentTemplateSid": ""
+        "contentTemplateSid": "",
+        "accountSid": "",
+        "authToken": "",
+        "fromNumber": ""
       },
       "internal_call": {
         "enabled": true,

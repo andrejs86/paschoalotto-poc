@@ -18,7 +18,7 @@ export const switchToWAVoice = async (payload: any) => {
       'To': payload.task.attributes.from,
       'From': settings.getFromNumber(),
       'ContentSid': settings.getContentTemplateSid(),
-      'ContentVariables': `{"1": "${payload.task.attributes.name}"}` 
+      'ContentVariables': `{"1": "${payload.task.attributes.name.split(' ')[0]}"}` 
     });
 
     let authorization = window.btoa(`${settings.getAccountSid()}:${settings.getAuthToken()}`);
